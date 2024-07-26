@@ -36,7 +36,14 @@ Fig 1: Barplot showing the distribution of rarings with their associated count f
 ![wordcloud](vis/word_cloud.png)
 Fig 2: Wordcloud generated on the non-event (removal of reference to location or day) specific words.
 
+Results of wordcloud shows that the reviews are postive but specifcally with focus on people, community and the social benefits that the Bachata Excahnge event adds to its patrons lives all for free. This can be presented as net benefit of social capital in the patrons lives is ever increasingly decreasing witin the UK (see, office of national statistics) and which can be economically Barred (Dederichs) to for people and why free natrue of the event is so valuable
+
 ## Transformer sentiment analysis
 
 # Success
 Overall the efforts invested by the various individuals to save Bachata Exchange were succesful with its return to the London dance scene confirmed.
+
+# References
+Dederichs, K. (2024). Join to connect? Voluntary involvement, social capital, and socioeconomic inequalities. Social Networks, 76, 42-50.
+
+https://www.gov.uk/government/statistics/social-capital-in-the-uk-2022

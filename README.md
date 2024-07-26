@@ -25,7 +25,7 @@ The first step of the project was to scrape the data from tripadvisor. To do thi
 1. 161 reviews at time of analysis were availible and scraped from TripAdvisor.
 2. The average length of a review was 71 words long.
 
-![starbar](vis/starbar_.png)
+![starbar](vis/starbar.png)
 
 Fig 1: Barplot showing the distribution of rarings with their associated count for the BAchata Exchange tripadvisor reviews.
 

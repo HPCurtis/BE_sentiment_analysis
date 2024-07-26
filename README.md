@@ -19,16 +19,18 @@ The following work is a personal project I created using my skills in Natural La
    - word_cloud.png  
 
 # Data Scraping
-The first step of the project was to scrape the data from tripadvisor. To do this I used a service called [scrapeHero Cloud](https://cloud.scrapehero.com/crawlers) to scrape the reviews from Bachata exchanges associated tripadvisor page [see](https://www.tripadvisor.co.uk/Attraction_Review-g186338-d26663269-Reviews-Bachata_Exchange-London_England.html).
+The first step of the project was to scrape the data from tripadvisor. To do this I used a service called [scrapeHero Cloud](https://cloud.scrapehero.com/crawlers) to scrape the reviews from Bachata exchanges' associated TripAdvisor page [see](https://www.tripadvisor.co.uk/Attraction_Review-g186338-d26663269-Reviews-Bachata_Exchange-London_England.html).
 
 ## Numerical reviews assessment
 
 1. 161 reviews at time of analysis were availible and scraped from TripAdvisor.
 2. The average length of a review was 71 words long.
 
+
+## Star ratings
 ![starbar](vis/starbar.png)
 
-Fig 1: Barplot showing the distribution of rarings with their associated count for the BAchata Exchange tripadvisor reviews.
+Fig 1: Barplot showing the distribution of rarings with their associated count for the Bachata Exchange tripadvisor reviews.
 
 
 # NLP analyses
@@ -41,8 +43,10 @@ Results of wordcloud shows that the reviews are positive but specifcally with fo
 
 ## Transformer sentiment analysis
 
+The sentiment analysis here is based of the results of distilbert-base-uncased-finetuned-sst-2-english text classifcation neural network. 
+
 # Success
-Overall the efforts invested by the various individuals to save Bachata Exchange were succesful with its return to the London dance scene confirmed.
+Overall the efforts invested by the various individuals to save Bachata Exchange were succesful with its return to the London dance scene confirmed. The model indenifies the sentiment of text classfying it as either postive or negative in sentiment.
 
 # References
 Dederichs, K. (2024). Join to connect? Voluntary involvement, social capital, and socioeconomic inequalities. Social Networks, 76, 42-50.

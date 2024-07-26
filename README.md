@@ -1,6 +1,6 @@
    # Saving Bachata Exchange
 
-The following was a personal project I created using my skills in Natural Language Processing (NLP) to help a campaign aimed at saving one of my favorite local dance events called Bachata Exchange in London. My contribution involved using NLP methods to collate and express the positive value of the event, as evidenced by the overwhelmingly positive reviews from its patrons.
+The following work is a personal project I created using my skills in Natural Language Processing (NLP) to help a campaign aimed at saving one of my favorite local dance events called Bachata Exchange in London. My contribution involved using NLP methods to collate and express the positive value of the event, as evidenced by the overwhelmingly positive reviews from its patrons.
 
 ## File structure
 
@@ -9,7 +9,7 @@ The following was a personal project I created using my skills in Natural Langua
    - descriptive.py: analysis file to calcuate descritive of sentiment analyses
    - transformer.py: sentiment analysis pipeline using the transformer api and the distilbert-base-uncased-finetuned-sst-2-english pretrained model.
    - vader_scores.py: sentiment anlaysis using Vader scores
-   - vader_vis.py: file to produce analysis visualisations.
+   - vis.py: file to produce analysis visualisations.
 - data
    - reviews.csv: CSV file of TripAdvsior review scraped from scrapeHero Cloud.
    - tranformers_analysis_result.csv updated CSV from the reviews.csv file with the distilbert-base-uncased-finetuned-sst-2-english sentiment analysis results.

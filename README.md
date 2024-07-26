@@ -22,4 +22,4 @@ The first step of the project was to scrape the data from tripadvisor. To do thi
 ![wordcloud](vis/word_cloud.png)
 
 ### Success
-Overall the efforts invested by the various indivdauls to save Bachata Exchagne were succesful with its return to London dance scene confirmed.
+Overall the efforts invested by the various indivduals to save Bachata Exchagne were succesful with its return to London dance scene confirmed.

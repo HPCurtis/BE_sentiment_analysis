@@ -11,10 +11,9 @@ def main():
     vader_df = pd.read_csv("data/vader_analysis_results.csv")
 
     # Generate wordcloud.
-    #wordcloudvis(tranformer_df, review_col="reviewBody")
-
+    wordcloudvis(transformer_df, review_col="reviewBody")
     # Plot star ratings
-    star_bar_plot(transformer_df, col="reviewRating")
+    #star_bar_plot(transformer_df, col="reviewRating")
 
 def star_bar_plot(df, col):
     """
@@ -47,10 +46,25 @@ def wordcloudvis(df, review_col):
     # Combine all text entries into a single string
     text = " ".join(review for review in df[review_col])
 
+    # Words to remove
+    uncessary_words  = ["Bachata", "London", "London!", "London.",  "London,", "LONDON", 
+                        "LONDON.", "Londoners", "London's", "London!The", "london"
+                        "bachata", "Exchange", "exchange", "exchange.", "Exchange", 
+                         "dance", "dance.", "dancing", "dancers", "dancers!"
+                        "dancing.", "dancer", "dancer!", "Sunday"]
+    
+    # Remove those words from the text
+    for word in uncessary_words:
+        text = text.replace(f" {word} ", " ")
+
+    print(text)
+
     # Create and display the word cloud
     wordcloud = WordCloud(width=800, height=400, background_color='white').generate(text)
-    plt.imshow(wordcloud, interpolation='bilinear')
-    plt.show()
-
+    plt.axis("off")
+    plt.imshow(wordcloud, interpolation="bilinear")
+    # Save the wordcloud figure out 
+    plt.savefig('vis/word_cloud.png', format='png', dpi=300)
+   
 if __name__ == "__main__":
     main()

@@ -19,6 +19,8 @@ The following work is a personal project I created using my skills in Natural La
 
 The first step of the project was to scrape the data from tripadvisor. To do this I used a service called [scrapeHero CLoud](https://cloud.scrapehero.com/crawlers) to scrape the reviews from Bachata exchanges associated tripadvisor page [see](https://www.tripadvisor.co.uk/Attraction_Review-g186338-d26663269-Reviews-Bachata_Exchange-London_England.html).
 
+![starbar](vis/starbar_.png)
+
 ![wordcloud](vis/word_cloud.png)
 Fig 1: Wordcloud generated on the non-event (removal of reference to location or day) specific words.
 

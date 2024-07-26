@@ -43,10 +43,10 @@ Results of wordcloud shows that the reviews are positive but specifcally with fo
 
 ## Transformer sentiment analysis
 
-The sentiment analysis here is based of the results of distilbert-base-uncased-finetuned-sst-2-english text classifcation neural network. 
+The sentiment analysis here is based of the results of distilbert-base-uncased-finetuned-sst-2-english text classifcation neural network. The model indenifies the sentiment of text classfying it as either postive or negative in sentiment.
+
 
 # Success
-Overall the efforts invested by the various individuals to save Bachata Exchange were succesful with its return to the London dance scene confirmed. The model indenifies the sentiment of text classfying it as either postive or negative in sentiment.
-
+Overall the efforts invested by the various individuals to save Bachata Exchange were succesful with its return to the London dance scene confirmed.
 # References
 Dederichs, K. (2024). Join to connect? Voluntary involvement, social capital, and socioeconomic inequalities. Social Networks, 76, 42-50.

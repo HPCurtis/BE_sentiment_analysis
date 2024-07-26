@@ -1,23 +1,25 @@
 import pandas as pd
 from wordcloud import WordCloud, STOPWORDS
 import matplotlib.pyplot as plt
+from matplotlib.ticker import MaxNLocator
 
 # Run programme to produce visualisation for analyses of reviews. 
 def main():
 
     # Read in the analysis results for descritive analyses.
     transformer_df = pd.read_csv("data/tranformers_analysis_results.csv")
-    transformer_df['reviewRating'] = transformer_df['reviewRating'].astype("string").str.rstrip('.')
+    transformer_df['reviewRating'] = transformer_df['reviewRating'].astype("string").str.rstrip('.').astype(float).astype(int)
+    
     vader_df = pd.read_csv("data/vader_analysis_results.csv")
 
     # Generate wordcloud.
     wordcloudvis(transformer_df, review_col="reviewBody")
     # Plot star ratings
-    #star_bar_plot(transformer_df, col="reviewRating")
+    star_bar_plot(transformer_df, col="reviewRating")
 
 def star_bar_plot(df, col):
     """
-        Prodcue bar plot of the review ratings.
+        Produce bar plot of the review ratings.
     """
     # COnvert to categorical value.
     df[col] = df[col].astype('category')
@@ -36,8 +38,9 @@ def star_bar_plot(df, col):
 
     plt.xlabel("Rating")
     plt.ylabel('Count')
-    plt.title(f'Number of Each {col}')
-    plt.show()
+    plt.title(f'Number of each star rating')
+    ax.xaxis.set_major_locator(MaxNLocator(integer=True))
+    plt.savefig('vis/starbar_.png', format='png', dpi=300)
 
 def wordcloudvis(df, review_col):
     """
@@ -57,7 +60,6 @@ def wordcloudvis(df, review_col):
     for word in uncessary_words:
         text = text.replace(f" {word} ", " ")
 
-    print(text)
 
     # Create and display the word cloud
     wordcloud = WordCloud(width=800, height=400, background_color='white').generate(text)

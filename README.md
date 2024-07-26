@@ -19,7 +19,7 @@ The following work is a personal project I created using my skills in Natural La
    - word_cloud.png  
 
 # Data Scraping
-The first step of the project was to scrape the data from tripadvisor. To do this I used a service called [scrapeHero CLoud](https://cloud.scrapehero.com/crawlers) to scrape the reviews from Bachata exchanges associated tripadvisor page [see](https://www.tripadvisor.co.uk/Attraction_Review-g186338-d26663269-Reviews-Bachata_Exchange-London_England.html).
+The first step of the project was to scrape the data from tripadvisor. To do this I used a service called [scrapeHero Cloud](https://cloud.scrapehero.com/crawlers) to scrape the reviews from Bachata exchanges associated tripadvisor page [see](https://www.tripadvisor.co.uk/Attraction_Review-g186338-d26663269-Reviews-Bachata_Exchange-London_England.html).
 
 ## Numerical reviews assessment
 
@@ -37,7 +37,7 @@ Fig 1: Barplot showing the distribution of rarings with their associated count f
 ![wordcloud](vis/word_cloud.png)
 Fig 2: Wordcloud generated on the non-event (removal of reference to location or day) specific words.
 
-Results of wordcloud shows that the reviews are postive but specifcally with focus on people, community and the social benefits that the Bachata Excahnge event adds to its patrons lives all for free. This can be presented as net benefit of social capital in the patrons lives is ever increasingly decreasing witin the UK (see, office of national statistics) and which can be economically Barred (Dederichs) to for people and why free natrue of the event is so valuable
+Results of wordcloud shows that the reviews are positive but specifcally with focus on people, community and the social benefits that the Bachata Exchnge event adds to its patrons lives all for free. This can be presented as net benefit of social capital in the patrons lives which is ever decreasing witin the UK (see, [office of national statistics](https://www.gov.uk/government/statistics/social-capital-in-the-uk-2022)) and which individuals can be economically Barred (Dederichs, 2024) from and why free status of the event is so valuable.
 
 ## Transformer sentiment analysis
 
@@ -46,5 +46,3 @@ Overall the efforts invested by the various individuals to save Bachata Exchange
 
 # References
 Dederichs, K. (2024). Join to connect? Voluntary involvement, social capital, and socioeconomic inequalities. Social Networks, 76, 42-50.
-
-https://www.gov.uk/government/statistics/social-capital-in-the-uk-2022

@@ -39,4 +39,4 @@ Fig 2: Wordcloud generated on the non-event (removal of reference to location or
 ## Transformer sentiment analysis
 
 # Success
-Overall the efforts invested by the various indivduals to save Bachata Exchagne were succesful with its return to the London dance scene confirmed.
+Overall the efforts invested by the various individuals to save Bachata Exchange were succesful with its return to the London dance scene confirmed.

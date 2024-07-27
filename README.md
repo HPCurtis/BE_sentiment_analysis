@@ -54,7 +54,7 @@ Results.
  if evaualted by a human: "A fantastic event! Free classes at different levels with great teachers. At present the classes are not available and I'm really missing them. A great place to learn something new and meet friendly fun loving people! Bring it back!" This only review classified as negative sentiment, but was one of the many 5 star ratings of Bachata Exchange.
 
 # Success
-Overall, the efforts invested by various individuals to save Bachata Exchange were successful, with its return to the London dance scene confirmed.
+Overall, the efforts invested by various individuals to save Bachata Exchange were successful, with its return to the London dance scene confirmed. Which is unsurprising seeing the result of this NLP analysis shows the value to people lives this event adds to people and that to ban it would be have been ultimately a poor descision.
 
 # References
 Dederichs, K. (2024). Join to connect? Voluntary involvement, social capital, and socioeconomic inequalities. Social Networks, 76, 42-50.

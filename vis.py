@@ -2,12 +2,14 @@ import pandas as pd
 from wordcloud import WordCloud, STOPWORDS
 import matplotlib.pyplot as plt
 from matplotlib.ticker import MaxNLocator
+from descriptives import sentiment_split
 
 # Run programme to produce visualisation for analyses of reviews. 
 def main():
 
     # Read in the analysis results for descritive analyses.
-    transformer_df = pd.read_csv("data/tranformers_analysis_results.csv")
+    transformer_df = sentiment_split(pd.read_csv("data/tranformers_analysis_results.csv"))
+    print(transformer_df)
     transformer_df['reviewRating'] = transformer_df['reviewRating'].astype("string").str.rstrip('.').astype(float).astype(int)
     
     vader_df = pd.read_csv("data/vader_analysis_results.csv")
@@ -16,6 +18,9 @@ def main():
     wordcloudvis(transformer_df, review_col="reviewBody")
     # Plot star ratings
     star_bar_plot(transformer_df, col="reviewRating")
+
+    # Plot transformer scores
+    hist_plot(transformer_df)
 
 def star_bar_plot(df, col):
     """
@@ -40,7 +45,7 @@ def star_bar_plot(df, col):
     plt.ylabel('Count')
     plt.title(f'Number of each star rating')
     ax.xaxis.set_major_locator(MaxNLocator(integer=True))
-    plt.savefig('vis/starbar_.png', format='png', dpi=300)
+    plt.savefig('vis/starbar.png', format='png', dpi=300)
 
 def wordcloudvis(df, review_col):
     """
@@ -60,13 +65,21 @@ def wordcloudvis(df, review_col):
     for word in uncessary_words:
         text = text.replace(f" {word} ", " ")
 
-
     # Create and display the word cloud
     wordcloud = WordCloud(width=800, height=400, background_color='white').generate(text)
     plt.axis("off")
     plt.imshow(wordcloud, interpolation="bilinear")
     # Save the wordcloud figure out 
     plt.savefig('vis/word_cloud.png', format='png', dpi=300)
+
+def hist_plot(df):
+    #print(df["score"])
+    fig, ax = plt.subplots()
+    ax.hist(df["score"])
+    plt.savefig('vis/transformer_scores.png', format='png', dpi=300)
+    
    
+    #plt.savefig('vis/transformer_scores.png', format='png', dpi=300)
+
 if __name__ == "__main__":
     main()

@@ -1,6 +1,6 @@
    # Saving Bachata Exchange
 
-The following work is a personal project I created using my skills in Natural Language Processing (NLP) using the [Transformer package](https://huggingface.co/) in  response to help a campaign aimed at saving one of my favorite local dance events called Bachata Exchange in London. My contribution involved using NLP methods to collate and express the positive value of the event, as evidenced by the overwhelmingly positive reviews from its patrons.
+The following work is a personal project I created using my skills in Natural Language Processing (NLP) using the [Transformer package](https://huggingface.co/) in response to help a campaign aimed at saving one of my favorite local dance events called Bachata Exchange in London. My contribution involved using NLP methods to collate and express the positive value of the event, as evidenced by the overwhelmingly positive reviews from its patrons.
 
 ## File structure
 
@@ -46,10 +46,15 @@ Results of wordcloud shows that the reviews are positive but specifcally with fo
 
 The sentiment analysis here is based of the results of distilbert-base-uncased-finetuned-sst-2-english text classifcation neural network. The model identifies the sentiment of text classfying it as either postive or negative in sentiment.
 
+![sentiment_scores](vis/transformer_scores.png)
+
+Fig 3: Histogram  of the 160  positively sentiment classfied TripAdvisor reviews. 
+
 Results.
 1. 160 one of the TripAdvsior reviews have been classified as positive sentiment.
-2. The negative sentiment classification is a example of misclassaificaiton of the model. 
- if evaualted by a human: "A fantastic event! Free classes at different levels with great teachers. At present the classes are not available and I'm really missing them. A great place to learn something new and meet friendly fun loving people! Bring it back!" This only review classified as negative sentiment, but was one the many 5 star ratings of Bachata Exchange.
+2. As Fig 3. shows there ovelingly high postive sentiment given to Bahcata Excahgne in its reviews.
+3. The negative sentiment classification is a example of misclassaificaiton of the model. 
+ if evaualted by a human: "A fantastic event! Free classes at different levels with great teachers. At present the classes are not available and I'm really missing them. A great place to learn something new and meet friendly fun loving people! Bring it back!" This only review classified as negative sentiment, but was one of the many 5 star ratings of Bachata Exchange.
 
 # Success
 Overall the efforts invested by the various individuals to save Bachata Exchange were succesful with its return to the London dance scene confirmed.

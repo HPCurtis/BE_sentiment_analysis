@@ -6,7 +6,7 @@ The following work is a personal project I created using my skills in Natural La
 
 - BE_sentiment_analysis
    - README.md: The file your reading.
-   - descriptive.py: analysis file to calcuate descritive of sentiment analyses
+   - descriptive.py: analysis file to calculate descritive of sentiment analyses
    - transformer.py: sentiment analysis pipeline using the transformer api and the distilbert-base-uncased-finetuned-sst-2-english pretrained model.
    - vader_scores.py: sentiment anlaysis using Vader scores
    - vis.py: file to produce analysis visualisations.
@@ -27,12 +27,10 @@ The first step of the project was to scrape the data from tripadvisor. To do thi
 1. 161 reviews at time of analysis were availible and scraped from TripAdvisor.
 2. The average length of a review was 71 words long.
 
-
 ## Star ratings
 ![starbar](vis/starbar.png)
 
 Fig 1: Barplot showing the distribution of rarings with their associated count for the Bachata Exchange tripadvisor reviews.
-
 
 # NLP analyses
 
@@ -40,11 +38,10 @@ Fig 1: Barplot showing the distribution of rarings with their associated count f
 ![wordcloud](vis/word_cloud.png)
 Fig 2: Wordcloud generated on the non-event (removal of reference to location or day) specific words.
 
-Results of wordcloud shows that the reviews are positive but specifcally with focus on people, community and the social benefits that the Bachata Exchnge event adds to its patrons lives all for free. This can be presented as net benefit of social capital in the patrons lives which is ever decreasing witin the UK (see, [office of national statistics](https://www.gov.uk/government/statistics/social-capital-in-the-uk-2022)) and which individuals can be economically Barred (Dederichs, 2024) from and why free status of the event is so valuable.
-
+The results of the word cloud indicate that the reviews are positive, particularly highlighting the focus on people, community, and the social benefits that the Bachata Exchange event brings to its patrons. This event, offered at no cost, significantly enhances the social capital in the lives of its participants. This is especially noteworthy considering the declining social capital within the UK.(see, [office of national statistics](https://www.gov.uk/government/statistics/social-capital-in-the-uk-2022)) Additionally, as Dederichs (2024) points out, many individuals can be economically barred from participating in such community-building activities. Therefore, the free status of the event is incredibly valuable, as it ensures inclusivity and accessibility for everyone, regardless of their economic situation.
 ## Transformer sentiment analysis
 
-The sentiment analysis here is based of the results of distilbert-base-uncased-finetuned-sst-2-english text classifcation neural network. The model identifies the sentiment of text classfying it as either postive or negative in sentiment.
+The sentiment analysis here is based on the results of the distilbert-base-uncased-finetuned-sst-2-english text classification neural network. The model identifies the sentiment of text, classifying it as either positive or negative.
 
 ![sentiment_scores](vis/transformer_scores.png)
 
@@ -57,7 +54,7 @@ Results.
  if evaualted by a human: "A fantastic event! Free classes at different levels with great teachers. At present the classes are not available and I'm really missing them. A great place to learn something new and meet friendly fun loving people! Bring it back!" This only review classified as negative sentiment, but was one of the many 5 star ratings of Bachata Exchange.
 
 # Success
-Overall the efforts invested by the various individuals to save Bachata Exchange were succesful with its return to the London dance scene confirmed.
+Overall, the efforts invested by various individuals to save Bachata Exchange were successful, with its return to the London dance scene confirmed.
 
 # References
 Dederichs, K. (2024). Join to connect? Voluntary involvement, social capital, and socioeconomic inequalities. Social Networks, 76, 42-50.

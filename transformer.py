@@ -1,12 +1,10 @@
 from transformers import pipeline
 import pandas as pd
 
-# Genearete pipeline as global.
+# Genearete pipeline as global this has to be done 
+# so the pipline is only called once and speeds up
+# dramatically. 
 sentinment_pipe = pipeline("sentiment-analysis")
-
-def sentiment_analysis(text):
-    # Create the sentiment analysis pipeline.
-    return(sentinment_pipe(text))
 
 def main():
     # Laod tripadvisor data into pandas dataframes. 
@@ -18,6 +16,9 @@ def main():
     # Save out results.
     df.to_csv('data/tranformers_analysis_results.csv', index=False)
 
+def sentiment_analysis(text):
+    # Create the sentiment analysis pipeline.
+    return(sentinment_pipe(text))
 
 if __name__ == "__main__":
     main()

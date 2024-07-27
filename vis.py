@@ -76,6 +76,9 @@ def hist_plot(df):
     #print(df["score"])
     fig, ax = plt.subplots()
     ax.hist(df["score"])
+    plt.xlabel("Sentiment score")
+    plt.title(f'Sentient analysis score for postively classified reviews')
+    plt.ylabel('Count')
     plt.savefig('vis/transformer_scores.png', format='png', dpi=300)
     
    

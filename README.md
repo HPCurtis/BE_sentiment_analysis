@@ -45,7 +45,7 @@ The sentiment analysis here is based on the results of the distilbert-base-uncas
 
 ![sentiment_scores](vis/transformer_scores.png)
 
-Fig 3: Histogram  of the 160  positively sentiment classfied TripAdvisor reviews. 
+Fig 3: Histogram  of the 160 positively sentiment classfied TripAdvisor reviews (score 0-1). 
 
 Results.
 1. 160 one of the TripAdvsior reviews have been classified as positive sentiment.
